@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quanlyTracNghiem"
+    android:background="@color/xam1">
+    <LinearLayout
+
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/cam"
+        android:orientation="vertical"
+        android:weightSum="2.5">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/shakespeare"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:text="Quiz Manager"></TextView>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:weightSum="3">
+<!--            <Button-->
+<!--                android:id="@+id/toan"-->
+<!--                android:layout_margin="30dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:backgroundTint="@color/xam1"-->
+<!--                android:text="Toán Học"-->
+<!--                android:textSize="20dp"></Button>-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="20sp"
+                android:id="@+id/toan"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:background="@drawable/dashboarh_item_2_background">
+
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/end_view_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageIcon1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/icon_background"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/manager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textItem1Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginRight="80dp"
+                    android:text="Toán"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imageIcon1"
+                    app:layout_constraintTop_toTopOf="@id/imageIcon1" />
+
+                <TextView
+                    android:id="@+id/textItem1Description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Thêm Xóa Sửa"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/textItem1Title"
+                    app:layout_constraintStart_toStartOf="@id/textItem1Title"
+                    app:layout_constraintTop_toBottomOf="@id/textItem1Title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <Button-->
+<!--                android:id="@+id/van"-->
+<!--                android:layout_margin="30dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:backgroundTint="@color/xam1"-->
+<!--                android:text="Văn Học"-->
+<!--                android:textSize="20dp"></Button>-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/van"
+                android:layout_width="300dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_height="60dp"
+                android:background="@drawable/dashboarh_item_4_background">
+
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/end_view_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageIcon4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/icon_background"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/english"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textItem4Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginRight="80dp"
+                    android:text="Văn Học"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imageIcon4"
+                    app:layout_constraintTop_toTopOf="@id/imageIcon4" />
+
+                <TextView
+                    android:id="@+id/textItem4Description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Thêm xóa sửa"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/textItem4Title"
+                    app:layout_constraintStart_toStartOf="@id/textItem4Title"
+                    app:layout_constraintTop_toBottomOf="@id/textItem4Title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:layout_marginTop="60dp"
+                android:id="@+id/thoat"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Trở về"
+                android:textSize="18dp"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
